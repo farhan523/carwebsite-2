@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<!-- mata tag -->
+	 <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- plugin css -->
+	<link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="../css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	 <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark bg-company-red">
+  		<a class="navbar-brand" href="#">Rotors</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+		 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link" href="./searchcar/searchcar.html">Our Cars</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="#">Riview</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="#">About</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="./blog/blog.html">Blogs</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="./form/form.html">Contact Us</a>
+		      </li>
+
+		   	</ul>
+
+		    <ul class="navbar-nav my-2 my-lg-0">
+		       <li class="nav-item"><a href="#"><i class="fas fa-search csk"></i></a></li>
+                <li class="nav-item "><a href=""><i class="far fa-user csk"></i></a></li>
+                <li><a href="./form/form.html" target="_blank"><div class="sell"><i class="fas fa-car-alt"></i><h6>SELL YOUR CAR</h6></div></a></li>
+		    </ul>
+
+		</div>
+	</nav>
+
+	<section class="car-details">
+		<div class="container-fluid">
+			<div class="det ">
+				<h2 >Car Details</h2>
+				<h3 >STEP 1</h3>
+			</div>
+		</div>
+	</section>
+
+	<form>
+
+		<div class="content">
+			<div class="container-fluid">
+				<div class="form-row">
+
+					<div class="form-group col-md-6 col-lg-4 col-xl-3">
+		      			<label for="condition">Condition*</label>
+		      			
+		      			<select id="condition" class="form-control"  name="condition">
+				       		<option value="select condition">Select Condition</option>
+				         	<option value="New">New</option>
+				         	<option value="Used">Used</option>
+				         	
+				        </select> 
+		    		</div>
+
+		    		<div class="form-group col-md-6 col-lg-4 col-xl-3">
+		      			<label for="make">Make*</label>
+		      			
+		      			<select id="make" class="form-control"  name="make">
+				       		<option value="selectmake">Select Make</option>
+				         	<option value="audi">Audi</option>
+				         	<option value="Bantely">Bantely</option>
+				         	<option value="BMW">BMW</option>
+				         	<option value="chevrolet">Chevrolet</option>
+				         	<option value="ford">Ford</option>
+				         	<option value="Honda">Honda</option>
+				        </select> 
+		    		</div>
+
+		    		<div class="form-group col-md-6 col-lg-4 col-xl-3">
+		      			<label for="make">Model*</label>
+		      			
+		      			<select id="model" class="form-control"  name="model">
+				       		<option value="selectmodel">Select Model</option>
+				         	<option value="1 series">1 series</option>
+				         	<option value="2 series">2 series</option>
+				         	<option value="BMW">BMW</option>
+				         	<option value="chevrolet">Chevrolet</option>
+				         	<option value="ford">Ford</option>
+				         	<option value="Honda">Honda</option>
+				        </select> 
+		    		</div>
+
+		    		<div class="form-group col-md-6 col-lg-4 col-xl-3">
+		      			<label for="make">Year*</label>
+		      			
+		      			<select id="year" class="form-control"  name="year">
+				       		<option value="selectYear">Select Year</option>
+				         	<option value="1998">1998</option>
+				         	<option value="1997">1997</option>
+				         	<option value="1996">1996</option>
+				         	<option value="1995">1995</option>
+				         	<option value="1994">1994</option>
+				         	<option value="1993">1993</option>
+				        </select> 
+		    		</div>
+		    		
+	  			</div>
+			</div>
+		</div>
+		
+		<div class="details1">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Mileage</label>
+					    <div class="col-sm-8">
+					      <input type="email" class="form-control form-control-md" id="colFormLabelSm" placeholder="Enter Mileage (KM)">
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Fuel Type</label>
+					    <div class="col-sm-8">
+					      <!-- <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"> -->
+
+					      	<select id="fueltype" class="form-control form-control-md" name="fueltype">
+						       		<option value="selectfueltype">Select fuel type</option>
+						         	<option value="cng">CNG</option>
+						         	<option value="diesel">Diesel</option>
+						         	<option value="hybrid">Hybrid</option>
+						         	<option value="lpg">LPG</option>
+						         	<option value="petrol">Petrol</option>
+						         	
+						    </select>
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Engine Capacity</label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control form-control-md" id="Engine Capacity" placeholder="Enter Engine Capacity (CC)">
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="transmission" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Transmission</label>
+					    <div class="col-sm-8">
+					     
+
+					      	<select id="transmission" class="form-control form-control-md" name="transmission">
+						       		<option value="selecttransmission">Select Transmission</option>
+						         	<option value="Automatic">Automatic</option>
+						         	<option value="Manual">Manual</option>
+						         	
+						         	
+						    </select>
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="exteriorcolor" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Exterior Color</label>
+					    <div class="col-sm-8">
+					     
+
+					      	<select id="exteriorcolor" class="form-control form-control-md" name="exteriorcolor">
+						       		<option value="selectexteriorcolor">Select Exterior Color</option>
+						         	<option value="black">Black</option>
+						         	<option value="white">White</option>
+						         	<option value="blue">Blue</option>
+						         	<option value="brown">Brown</option>
+						         	
+						    </select>
+					    </div>
+	  				</div>
+	  				
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="assemble" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Select Assemble</label>
+					    <div class="col-sm-8">
+					     
+
+					      	<select id="transmission" class="form-control form-control-md" name="assemble">
+						       		<option value="selectassemble">Select Assemble</option>
+						         	<option value="imported">Imported</option>
+						         	<option value="local">Local</option>
+						         	
+						         	
+						    </select>
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="date" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Enter Date</label>
+					    <div class="col-sm-8">
+					      <input type="date" class="form-control form-control-md" id="date" >
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="vin" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> VIN</label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control form-control-md" id="vin" placeholder="Enter VIN" name="vin">
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="assemble" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Select Assemble</label>
+					    <div class="col-sm-8">
+					     
+
+					      	<select id="history" class="form-control form-control-md" name="history">
+						       		<option value="selecthistory">Select History</option>
+						         	<option value="carfax">Carfax</option>
+						         	<option value="carfax1owner">Carfax 1 Owner</option>
+						         	<option value="others">Others</option>
+						         	
+						    </select>
+					    </div>
+	  				</div>
+
+	  				<div class="col-sm-12 location">
+	  					<h4>Car Location</h4>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="location" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Location</label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control form-control-md" id="location" placeholder="Enter Zip or Address">
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="latitude" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Latitude</label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control form-control-md" id="latitude" placeholder="Enter Latitude">
+					    </div>
+	  				</div>
+
+	  				<div class="form-group row col-md-6 col-lg-6 col-xl-4 csp">
+					    <label for="longitude" class="col-sm-4 col-form-label col-form-label-sm"><i class="fas fa-road"></i> Longitude</label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control form-control-md" id="longitude" placeholder="Enter longitude">
+					    </div>
+	  				</div>
+
+				</div>
+
+				<section class="car-details step2">
+					<div class="container-fluid">
+						<div class="det ">
+							<h4 >Select Your Car Features</h4>
+							<h3 >STEP 2</h3>
+						</div>
+					</div>
+				</section>
+
+				<div class="col-sm-12">
+							<div class="check2">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+										<div class="box box1">
+											<h6>Comfort</h6>
+											
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C front">
+											    <label class="form-check-label" for="A/C front">
+											      A/C: Front
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C Rear">
+											    <label class="form-check-label" for="A/C Rear">
+											      A/C: Rear
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Back-camera">
+											    <label class="form-check-label" for="Back-camera">
+											      Back Camera
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Cruise-Control">
+											    <label class="form-check-label" for="Cruise-Control">
+											      Cruise Control
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="navigation">
+											    <label class="form-check-label" for="navigation">
+											      Navigation
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-locks">
+											    <label class="form-check-label" for="power-locks">
+											      Power Locks
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-steering">
+											    <label class="form-check-label" for="power-steering">
+											      Power Steering
+											    </label>
+  											</div>
+
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+										<div class="box box1">
+											<h6>Entertainemnt</h6>
+											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C front">
+											    <label class="form-check-label" for="A/C front">
+											      A/C: Front
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C Rear">
+											    <label class="form-check-label" for="A/C Rear">
+											      A/C: Rear
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Back-camera">
+											    <label class="form-check-label" for="Back-camera">
+											      Back Camera
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Cruise-Control">
+											    <label class="form-check-label" for="Cruise-Control">
+											      Cruise Control
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="navigation">
+											    <label class="form-check-label" for="navigation">
+											      Navigation
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-locks">
+											    <label class="form-check-label" for="power-locks">
+											      Power Locks
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-steering">
+											    <label class="form-check-label" for="power-steering">
+											      Power Steering
+											    </label>
+  											</div>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+										<div class="box box1">
+											<h6>Safety</h6>
+											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C front">
+											    <label class="form-check-label" for="A/C front">
+											      A/C: Front
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C Rear">
+											    <label class="form-check-label" for="A/C Rear">
+											      A/C: Rear
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Back-camera">
+											    <label class="form-check-label" for="Back-camera">
+											      Back Camera
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Cruise-Control">
+											    <label class="form-check-label" for="Cruise-Control">
+											      Cruise Control
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="navigation">
+											    <label class="form-check-label" for="navigation">
+											      Navigation
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-locks">
+											    <label class="form-check-label" for="power-locks">
+											      Power Locks
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-steering">
+											    <label class="form-check-label" for="power-steering">
+											      Power Steering
+											    </label>
+  											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+										<div class="box box1">
+											<h6>Seats</h6>
+											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C front">
+											    <label class="form-check-label" for="A/C front">
+											      A/C: Front
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C Rear">
+											    <label class="form-check-label" for="A/C Rear">
+											      A/C: Rear
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Back-camera">
+											    <label class="form-check-label" for="Back-camera">
+											      Back Camera
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Cruise-Control">
+											    <label class="form-check-label" for="Cruise-Control">
+											      Cruise Control
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="navigation">
+											    <label class="form-check-label" for="navigation">
+											      Navigation
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-locks">
+											    <label class="form-check-label" for="power-locks">
+											      Power Locks
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-steering">
+											    <label class="form-check-label" for="power-steering">
+											      Power Steering
+											    </label>
+  											</div>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+										<div class="box box1">
+											<h6>Windows</h6>
+											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C front">
+											    <label class="form-check-label" for="A/C front">
+											      A/C: Front
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C Rear">
+											    <label class="form-check-label" for="A/C Rear">
+											      A/C: Rear
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Back-camera">
+											    <label class="form-check-label" for="Back-camera">
+											      Back Camera
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Cruise-Control">
+											    <label class="form-check-label" for="Cruise-Control">
+											      Cruise Control
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="navigation">
+											    <label class="form-check-label" for="navigation">
+											      Navigation
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-locks">
+											    <label class="form-check-label" for="power-locks">
+											      Power Locks
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-steering">
+											    <label class="form-check-label" for="power-steering">
+											      Power Steering
+											    </label>
+  											</div>
+										</div>
+									</div>
+
+									<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+										<div class="box box1">
+											<h6>Other</h6>
+											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C front">
+											    <label class="form-check-label" for="A/C front">
+											      A/C: Front
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="A/C Rear">
+											    <label class="form-check-label" for="A/C Rear">
+											      A/C: Rear
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Back-camera">
+											    <label class="form-check-label" for="Back-camera">
+											      Back Camera
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="Cruise-Control">
+											    <label class="form-check-label" for="Cruise-Control">
+											      Cruise Control
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="navigation">
+											    <label class="form-check-label" for="navigation">
+											      Navigation
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-locks">
+											    <label class="form-check-label" for="power-locks">
+											      Power Locks
+											    </label>
+  											</div>
+
+   											<div class="form-check mb-2 mr-sm-2">
+											    <input class="form-check-input" type="checkbox" id="power-steering">
+											    <label class="form-check-label" for="power-steering">
+											      Power Steering
+											    </label>
+  											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						
+						<section class="car-details step2">
+							<div class="container-fluid">
+								<div class="det ">
+									<h4 >Upload Pictures</h4>
+									<h3 >STEP 3</h3>
+								</div>
+							</div>
+						</section>
+						
+
+						<div class="col-sm-12">
+							<div class="picture-upload">
+								<div class="row">
+									<div class="col-sm-12   col-md-12 col-lg-8">
+										<div class="uploader">
+											<img id="biki2"src="https://p1.pxfuel.com/preview/805/419/635/background-grain-light-colors-texture-royalty-free-thumbnail.jpg" width="100%" height="470px">
+											<label id="buttondisable">Choose File
+
+												<input id="biki" type="file" name="files[]" multiple>
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-12  col-lg-4">
+										<div class="image-inst">
+											<h6>RECOMMENDATION AND GUIDES</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Aliquam mollis convallis <br>semper. Proin risus felis, mollis at augue<br> non, tincidunt eleifend ipsum.</p>
+											<h6>Recomended Image Resolution: 800 <br> x 470 px or higher</h6>
+											<p id="brown">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Aliquam mollis convallis <br>semper. Proin risus felis, mollis at augue<br> non, tincidunt eleifend ipsum.</p>
+											<h6>User can upload up to 5 photos, but dealer can upload up to 10 photos.</h6>
+											<p id="brown">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Aliquam mollis convallis <br>semper. Proin risus felis, mollis at augue<br> non, tincidunt eleifend ipsum.</p>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="show-image">
+								<div class="row " id="gallery">
+									<!-- <div class="col-sm-3 col-xs-6">
+										<div class="first">
+											<img  id="0"src="" height="100px"  width="100%">
+											<div  class="del2 del 0">X</div>
+										</div>
+									</div>
+									<div class="col-sm-3 col-xs-6">
+										<div class="first">
+											<img  id="1"src="" height="100px"  width="100%">
+											<div class="del2 del 1">X</div>
+										</div>
+									</div>
+									<div class="col-sm-3 col-xs-6" >
+										<div class="first">
+											<img  id="2"src="" height="100px"  width="100%">
+											<div class="del2 del 2">X</div>
+										</div>
+									</div>
+									<div class="col-sm-3 col-xs-6">
+										<div class="first">
+											<img  id="3"src="" height="100px"  width="100%">
+											<div  class="del2 del 3">X</div>
+										</div>
+									</div>
+ -->
+
+
+
+										
+								</div>
+							</div>
+						</div>
+
+						<section class="car-details step2">
+							<div class="container-fluid">
+								<div class="det ">
+									<h4 >Enter Seller's note</h4>
+									<h3 >STEP 4</h3>
+								</div>
+							</div>
+						</section>
+
+						<div class="col-sm-12">
+							<div class="notes">
+								<div class="row">
+									<div class="col-sm-8">
+										<textarea  placeholder="Enter seller's note" name="comment"></textarea>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<section class="car-details step2">
+							<div class="container-fluid">
+								<div class="det ">
+									<h4 >Set Your Asking Price</h4>
+									<h3 >STEP 5</h3>
+								</div>
+							</div>
+						</section>
+
+						<div class="col-sm-12">
+							<div class="price">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="price-box">
+											<div class="prisebox2">
+												<label for="Price" id="price">Price*($)</label>
+						     					 <input type="text" class="form-control vin" id="in-price" placeholder="" name="Price">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8">
+										<div class="price-text">
+											<p>Determine a competitive price by comparing your vehicle's information and mileage to similar vehicles for sale by dealers and private sellers in your area. Then consider pricing your vehicle within range. Be sure to provide Seller's Comments and photos<br> to highlight the best features of your vehicle, especially if your asking price is above average</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12">
+							<div class="signup">
+								<h4>Sign Up</h4>
+								<p>Already Registered? Members <a href="">Login Here</a></p>
+								
+							</div>
+						</div>
+
+
+						<div class="col-sm-12">
+							<div class="signup-form">
+								<div class="row cdk">
+									<div class="col-sm-12   col-lg-8">
+										<div class="input-details">
+											<div class="row">
+													
+
+												<div class="form-group upx col-12 col-sm-12 col-sm-12 col-lg-6">
+									      			<label for="name"><h6>Name</h6></label>
+									      			
+									      			<div>
+					      								<input type="text" class="form-control form-control-md" id="name" placeholder="Enter Name">
+					    							</div>
+		    									</div>
+
+												<div class="form-group upx col-12 col-sm-12 col-sm-12 col-lg-6">
+									      			<label for="last-name"><h6>Last Name</h6></label>
+									      			
+									      			<div>
+					      								<input type="text" class="form-control form-control-md" id="last-name" placeholder="Enter Name">
+					    							</div>
+		    									</div>
+
+												<div class="form-group upx col-12 col-sm-12 col-lg-6">
+									      			<label for="number"><h6>Phone Number</h6></label>
+									      			
+									      			<div>
+					      								<input type="text" class="form-control form-control-md" id="number" placeholder="Enter Phone">
+					    							</div>
+		    									</div>
+
+												<div class="form-group upx col-12 col-sm-12 col-lg-6">
+									      			<label for="email"><h6>Email</h6></label>
+									      			
+									      			<div>
+					      								<input type="email" class="form-control form-control-md" id="email" placeholder="Enter Email">
+					    							</div>
+		    									</div>
+
+												<div class="form-group upx col-12 col-sm-12 col-lg-6">
+									      			<label for="login"><h6>Login*</h6></label>
+									      			
+									      			<div>
+					      								<input type="text" class="form-control form-control-md" id="login" placeholder="Enter Login">
+					    							</div>
+		    									</div>
+
+												<div class="form-group upx col-12 col-sm-12 col-lg-6">
+									      			<label for="Password"><h6>Password*</h6></label>
+									      			
+									      			<div>
+					      								<input type="Password" class="form-control form-control-md" id="Password" placeholder="Enter Password">
+					    							</div>
+		    									</div>
+
+												<div class="upx col-sm-6">
+												
+						     					 <input type="submit" value="SIGN UP NOW!" >
+												</div>
+
+											</div>
+											
+										</div>
+									</div>
+
+									<div class="col-sm-12   col-lg-4">
+										<div class="input-instruction">
+											<div class="design">
+												
+											</div>
+											<h5>RECOMMENDATION & 	GUIDES</h5>
+											<p>By providing us with your phone number, you acknowledge and agree that we (and/or our service providers) may contact you at the mobile or other telephone number you list, in order to provide you with additional information or offers regarding our services, and that in doing so we may utilize automatic dialing services.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+			</div>
+		</div>
+  
+  	
+</form>
+	
+	<!-- footer -->
+
+	<footer class="foot">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set">
+						<h2>Autocar</h2>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set set2">
+						<h3>Contact Info</h3>
+						<ul>
+							<li><i class="fas fa-map-marker-alt"></i> 20F Green Road Swiz Canal near world</li>
+							<li><i class="fas fa-envelope"></i> info@gmail.com</li>
+							<li><i class="fas fa-phone-alt"></i> +92 564 66556256</li>
+							<li><i class="fas fa-fax"></i> +432 26 5466</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set set3">
+						<h3>Useful Links</h3>
+						<ul>
+							<li>> <a href="#">Home</a></li>
+							<li>> <a href="#">About Us</a></li>
+							<li>> <a href="#">Services</a></li>
+							<li>> <a href="#">Car Listing</a></li>
+							<li>> <a href="#">Blog</a></li>
+							<li>> <a href="#">Contact Us</a></li>
+							<li>> <a href="#">Elements</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set">
+						<h3>Subscribe</h3>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						<div class="data">
+							<input type="text" placeholder="Email address..." name="">
+							<div class="push">
+								<i class="far fa-paper-plane"></i>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="foot2">
+						<p> 2019 Cars U. All Right reserved.</p>
+						<div class="end pull-right">
+							<div class="social">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div class="social tweet">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</div>
+							<div class="social google">
+								<a href=""><i class="fab fa-google"></i></a>
+							</div>
+							<div class="social linked">
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							</div>
+							<div class="social top">
+								<a href="#choose"><i class="fas fa-caret-up"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+
+	<!-- bootstrap jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<!-- bootstrap fonts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<!-- bootstrap javascript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/form.js"></script> 
+</body>
+</html>

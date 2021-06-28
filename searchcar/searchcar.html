@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<!-- mata tag -->
+	 <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- plugin css -->
+	<link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="../css/searchcar.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	 <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!-- bootstrap slider -->
+    <link href="../plugins/slider/dist/css/bootstrap-slider.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark bg-company-red">
+  		<a class="navbar-brand" href="#">Rotors</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+		 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link" href="./searchcar/searchcar.html">Our Cars</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="#">Riview</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="#">About</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="./blog/blog.html">Blogs</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="./form/form.html">Contact Us</a>
+		      </li>
+
+		   	</ul>
+
+		    <ul class="navbar-nav my-2 my-lg-0">
+		       <li class="nav-item"><a href="#"><i class="fas fa-search csk"></i></a></li>
+                <li class="nav-item "><a href=""><i class="far fa-user csk"></i></a></li>
+                <li><a href="./form/form.html" target="_blank"><div class="sell"><i class="fas fa-car-alt"></i><h6>SELL YOUR CAR</h6></div></a></li>
+		    </ul>
+
+		</div>
+	</nav>
+
+	<header class="header">
+		<div class="container-fluid">
+			<div class="ask">
+				<h1>Search Your Favourite Car</h1>
+				<div class="conx form-inline">
+					<input type="text" class="form-control longitude " id="search" placeholder="Type Keyword to find answers" name="search">
+				</div>
+				<p>You can also browse below to find what you are looking for.</p>
+			</div>
+		</div>
+	</header>
+
+	<section class="search">
+		<div class="container-fluid">
+			<div class="search-in">
+				<h3>SEARCH IN DETAILS</h3>
+			</div>
+		</div>
+	</section>
+
+	<section class="form-details">
+		
+			<div class="center">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 col-lg-4">
+							<div class="form">
+								<form>
+									<div class="form-group col-xl-12 csp">
+									    <label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm"> <h6>MAKE</h6></label>
+									    <div class="col-sm-12">
+									      <!-- <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"> -->
+
+									      	<select id="fueltype" class="form-control form-control-md" name="fueltype">
+										       		<option value="selectfueltype">Select fuel type</option>
+										         	<option value="cng">CNG</option>
+										         	<option value="diesel">Diesel</option>
+										         	<option value="hybrid">Hybrid</option>
+										         	<option value="lpg">LPG</option>
+										         	<option value="petrol">Petrol</option>
+										         	
+										    </select>
+					    				</div>
+	  								</div>
+
+	  								<div class="form-group col-xl-12 csp">
+									    <label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm"> <h6>MODEL</h6></label>
+									    <div class="col-sm-12">
+									      <!-- <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"> -->
+
+									      	<select id="fueltype" class="form-control form-control-md" name="fueltype">
+										       		<option value="selectfueltype">Select fuel type</option>
+										         	<option value="cng">CNG</option>
+										         	<option value="diesel">Diesel</option>
+										         	<option value="hybrid">Hybrid</option>
+										         	<option value="lpg">LPG</option>
+										         	<option value="petrol">Petrol</option>
+										         	
+										    </select>
+					    				</div>
+	  								</div>
+
+	  								<div class="form-group col-xl-12 csp">
+									    <label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm"> <h6>FUEL</h6></label>
+									    <div class="col-sm-12">
+									      <!-- <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"> -->
+
+									      	<select id="fueltype" class="form-control form-control-md" name="fueltype">
+										       		<option value="selectfueltype">Select fuel type</option>
+										         	<option value="cng">CNG</option>
+										         	<option value="diesel">Diesel</option>
+										         	<option value="hybrid">Hybrid</option>
+										         	<option value="lpg">LPG</option>
+										         	<option value="petrol">Petrol</option>
+										         	
+										    </select>
+					    				</div>
+	  								</div>
+
+	  								<div class="form-group col-xl-12 csp">
+									    <label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm"> <h6>MILEAGE</h6></label>
+									    <div class="col-sm-12">
+									      <!-- <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"> -->
+
+									      	<select id="fueltype" class="form-control form-control-md" name="fueltype">
+										       		<option value="selectfueltype">Select fuel type</option>
+										         	<option value="cng">CNG</option>
+										         	<option value="diesel">Diesel</option>
+										         	<option value="hybrid">Hybrid</option>
+										         	<option value="lpg">LPG</option>
+										         	<option value="petrol">Petrol</option>
+										         	
+										    </select>
+					    				</div>
+	  								</div>
+
+	  								<div class="form-group col-xl-12 csp">
+									    <label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm"> <h6>VEHICLE CONDITION</h6></label>
+									    <div class="col-sm-12">
+									      <!-- <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"> -->
+
+									      	<select id="fueltype" class="form-control form-control-md" name="fueltype">
+										       		<option value="selectfueltype">Select fuel type</option>
+										         	<option value="cng">CNG</option>
+										         	<option value="diesel">Diesel</option>
+										         	<option value="hybrid">Hybrid</option>
+										         	<option value="lpg">LPG</option>
+										         	<option value="petrol">Petrol</option>
+										         	
+										    </select>
+					    				</div>
+	  								</div>
+
+	  								<div class="form-group col-xl-12 csp">
+									    <label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm"> <h6>PRICE RANGE</h6></label>
+									    <div class="col-sm-12">
+									      
+										    <input type="range" id="range" name="" class="form-control form-control-md ">
+					    				</div>
+					    			</div>
+					    			<div class="form-group  col-xl-12 csp22">
+									    
+									      <div class="col-sm-12">
+									      	<input type="submit"  class="form-control form-control-md btn btn-danger "
+										    value="SEARCH">
+									      </div>
+										    
+					    			</div>
+	  								
+
+
+								</form>
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-lg-8">
+								<div class="carlist">
+									<div class="item1 ">
+										<div class="image">
+										
+										</div>
+										<h5>PASSAT 3.0 TSI</h5>
+										<button type="button" class="btn btn-danger pt-1 pb-1">Price: $18.00</button>
+										<p>one of the best vehicle so far in the market and absoloutely ready to drive on roads</p>
+										<a href="">SEE MORE--></a>
+									</div>
+
+									<div class="item1 item2">
+										<div class="image">
+										
+										</div>
+										<h5>PASSAT 3.0 TSI</h5>
+										<button type="button" class="btn btn-danger pt-1 pb-1">Price: $18.00</button>
+										<p>one of the best vehicle so far in the market and absoloutely ready to drive on roads</p>
+										<a href="">SEE MORE--></a>
+									</div>
+
+									<div class="item1 item3">
+										<div class="image">
+										
+										</div>
+										<h5>PASSAT 3.0 TSI</h5>
+										<button type="button" class="btn btn-danger pt-1 pb-1">Price: $18.00</button>
+										<p>one of the best vehicle so far in the market and absoloutely ready to drive on roads</p>
+										<a href="">SEE MORE--></a>
+									</div>
+
+									<div class="item1 item4">
+										<div class="image">
+										
+										</div>
+										<h5>PASSAT 3.0 TSI</h5>
+										<button type="button" class="btn btn-danger pt-1 pb-1">Price: $18.00</button>
+										<p>one of the best vehicle so far in the market and absoloutely ready to drive on roads</p>
+										<a href="">SEE MORE--></a>
+									</div>
+
+									<div class="item1 item5">
+										<div class="image">
+										
+										</div>
+										<h5>PASSAT 3.0 TSI</h5>
+										<button type="button" class="btn btn-danger pt-1 pb-1">Price: $18.00</button>
+										<p>one of the best vehicle so far in the market and absoloutely ready to drive on roads</p>
+										<a href="">SEE MORE--></a>
+									</div>
+
+									<div class="item1 item6">
+										<div class="image">
+										
+										</div>
+										<h5>PASSAT 3.0 TSI</h5>
+										<button type="button" class="btn btn-danger pt-1 pb-1">Price: $18.00</button>
+										<p>one of the best vehicle so far in the market and absoloutely ready to drive on roads</p>
+										<a href="">SEE MORE--></a>
+									</div>
+
+
+
+									
+								</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		
+	</section>
+
+	<div class="paginatio">
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		  </ul>
+		</nav>
+	</div>
+
+	<!-- footer -->
+
+	<footer class="foot">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set">
+						<h2>Autocar</h2>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set set2">
+						<h3>Contact Info</h3>
+						<ul>
+							<li><i class="fas fa-map-marker-alt"></i> 20F Green Road Swiz Canal near world</li>
+							<li><i class="fas fa-envelope"></i> info@gmail.com</li>
+							<li><i class="fas fa-phone-alt"></i> +92 564 66556256</li>
+							<li><i class="fas fa-fax"></i> +432 26 5466</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set set3">
+						<h3>Useful Links</h3>
+						<ul>
+							<li>> <a href="#">Home</a></li>
+							<li>> <a href="#">About Us</a></li>
+							<li>> <a href="#">Services</a></li>
+							<li>> <a href="#">Car Listing</a></li>
+							<li>> <a href="#">Blog</a></li>
+							<li>> <a href="#">Contact Us</a></li>
+							<li>> <a href="#">Elements</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set">
+						<h3>Subscribe</h3>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						<div class="data">
+							<input type="text" placeholder="Email address..." name="">
+							<div class="push">
+								<i class="far fa-paper-plane"></i>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="foot2">
+						<p> 2019 Cars U. All Right reserved.</p>
+						<div class="end pull-right">
+							<div class="social">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div class="social tweet">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</div>
+							<div class="social google">
+								<a href=""><i class="fab fa-google"></i></a>
+							</div>
+							<div class="social linked">
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							</div>
+							<div class="social top">
+								<a href="#choose"><i class="fas fa-caret-up"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- bootstrap jquery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- bootstrap fonts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<!-- bootstrap javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- bootsrap slider js -->
+
+
+
+
+<script src="../plugins/slider/dist/bootstrap-slider.js"></script>
+<script type="text/javascript">
+	$("#range").slider({
+		id:"#range",
+		min:0,
+		max:20000,
+		range:true,
+		value:0,
+		lock_to_tick:true,
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<!-- mata tag -->
+	 <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- plugin css -->
+	<link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	 <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark bg-company-red">
+  		<a class="navbar-brand" href="#">Rotors</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+		 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link" href="./searchcar/searchcar.html">Our Cars</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="#">Riview</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="#">About</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="./blog/blog.html">Blogs</a>
+		      </li>
+
+		      <li class="nav-item active">
+		        <a class="nav-link " href="./signup/signup2.html">Contact Us</a>
+		      </li>
+
+		   	</ul>
+
+		    <ul class="navbar-nav my-2 my-lg-0">
+		       <li class="nav-item"><a href="#"><i class="fas fa-search csk"></i></a></li>
+                <li class="nav-item "><a href=""><i class="far fa-user csk"></i></a></li>
+                <li><a href="./form/form.html" target="_blank"><div class="sell"><i class="fas fa-car-alt"></i><h6>SELL YOUR CAR</h6></div></a></li>
+		    </ul>
+
+		</div>
+	</nav>
+
+	<!-- header . -->
+
+    <header class="header">
+    	<div class="">
+    		<div class="header-slider">
+    			<div id="demo" class="carousel slide display-text" data-ride="carousel" data-interval='2000' >
+			  <!-- <ul class="carousel-indicators">
+			    <li data-target="#demo" data-slide-to="0" class="active"></li>
+			    <li data-target="#demo" data-slide-to="1"></li>
+			    <li data-target="#demo" data-slide-to="2"></li>
+			  </ul> -->
+			  <div class="carousel-inner">
+			    <div class="carousel-item active custom-model ">
+			      <img src="https://images.unsplash.com/photo-1563339007-6914941198b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGF1ZGl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Los Angeles" >
+			      <div class="carousel-caption">
+			        <h1>Lambdorginni</h1>
+			        <h1>Aventador LP700-4</h1>
+			        <p>6.6L V8 32V DDI OHV Turbo Diesel, 5-speed automatic,<br>Fuel Type: Diesel , Color: Black</p>
+			       <a href=""> <div id="book"><h4 class="mb-0">BOOK NOW</h4></div></a>
+			      </div>   
+			    </div>
+			    <div class="carousel-item custom-model">
+			      <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Chicago">
+			      <div class="carousel-caption">
+			        <h1>Lambdorginni</h1>
+			        <h1>Aventador LP700-4</h1>
+			        <p>6.6L V8 32V DDI OHV Turbo Diesel, 5-speed automatic,<br>Fuel Type: Diesel , Color: Black</p>
+			       <a href=""> <div id="book"><h4 class="mb-0">BOOK NOW</h4></div></a>
+			      </div>   
+			    </div>
+			    <!-- <div class="carousel-item custom-model">
+			      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="New York">
+			      <div class="carousel-caption">
+			        <h1>Lambdorginni</h1>
+			        <h1>Aventador LP700-4</h1>
+			        <p>6.6L V8 32V DDI OHV Turbo Diesel, 5-speed automatic,<br>Fuel Type: Diesel , Color: Black</p>
+			       <a href=""> <div id="book"><h4>BOOK NOW</h4></div></a>
+			      </div>  -->  
+			    </div>
+			  </div>
+			  <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo" data-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			  </a> -->
+			</div>
+    		</div>
+
+    		
+    	</div>
+    </header>
+
+    <!-- city -->
+    <section class="city">
+		<div class="container-fluid">
+			<div class="cont">
+					<h2>Used Cars ? Look no Further</h2>	
+			</div>
+		</div>
+	</section>
+
+	<!-- cities -->
+
+	<section class="cities">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4 col-md-3 col-lg-2">
+					<a href="">
+						<div class="cont">
+							<img src="http://cartrade.pk/wp-content/uploads/2017/12/lahore-icon.png">
+							<div class="location">
+								<p>Used cars in</p>
+								<h3>Lahore</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 col-md-3 col-lg-2">
+					<a href="">
+						<div class="cont">
+						 	<img src="http://cartrade.pk/wp-content/uploads/2017/12/karachi-icon.png">
+						 	<div class="location">
+								<p>Used cars in</p>
+								<h3>Karachi</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 col-md-3 col-lg-2">
+					<a href="">
+						<div class="cont">
+						 	<img src="http://cartrade.pk/wp-content/uploads/2017/12/isl-icon.png">
+						 	<div class="location">
+								<p>Used cars in</p>
+								<h3>Islamabad</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 col-md-3 col-lg-2">
+					<a href="">
+						<div class="cont">
+						 	<img src="http://cartrade.pk/wp-content/uploads/2017/12/bahawalpur-icon.png">
+						 	<div class="location">
+								<p>Used cars in</p>
+								<h3>Bahawalpur</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 col-md-3  col-lg-2">
+					<a href="">
+						<div class="cont">
+						 	<img src="http://cartrade.pk/wp-content/uploads/2017/12/multan-icon.png">
+						 	<div class="location">
+								<p>Used cars in</p>
+								<h3>Multan</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 col-md-3 col-lg-2">
+					<a href="">
+						<div class="cont">
+						 	<img src="http://cartrade.pk/wp-content/uploads/2017/12/faisalabad-icon.png">
+						 	<div class="location">
+								<p>Used cars in</p>
+								<h3>Faislabad</h3>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- why choose us -->
+
+	<section class="choose" id="choose">
+		<div class="container-fluid">
+			<div class="content">
+				<div class="material">
+					<h5>Because We Are Ultra Creative Agency</h5>
+					<h1>WHY CHOOSE US</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- specs -->
+
+	<section class="specs">
+		<div class="container-fluid">
+			 <div class="row">
+			 	<div class="col-sm-6 col-md-4 col-lg-3">
+			 		<div class="content">
+			 			<div class="icon">
+			 				<i class="fas fa-car"></i>
+
+			 			</div>
+			 				<h2>ALL BRANDS</h2>
+			 				<p> All brands including multinational and national which include tesla and corolla and all the famous brands</p>
+			 		</div>
+			 	</div>
+			 	<div class="col-sm-6 col-md-4 col-lg-3">
+			 		<div class="content">
+			 			<div class="icon">
+			 				<i class="far fa-comment-dots"></i>
+
+			 			</div>
+			 				<h2>FREE SUPPORT</h2>
+			 				<p> All brands including multinational and national which include tesla and corolla and all the famous brands</p>
+			 		</div>
+			 	</div>
+			 	<div class="col-sm-6 col-md-4 col-lg-3">
+			 		<div class="content">
+			 			<div class="icon">
+			 				<i class="far fa-building"></i>
+
+			 			</div>
+			 				<h2>DEALERSHIP</h2>
+			 				<p> All brands including multinational and national which include tesla and corolla and all the famous brands</p>
+			 		</div>
+			 	</div>
+			 	<div class="col-sm-6 col-md-4 col-lg-3">
+			 		<div class="content">
+			 			<div class="icon">
+			 				<i class="fas fa-wallet"></i>
+
+			 			</div>
+			 				<h2>AFFORDABLE</h2>
+			 				<p> All brands including multinational and national which include tesla and corolla and all the famous brands</p>
+			 		</div>
+			 	</div>
+			 	<div class="col-sm-6 col-md-4 col-lg-3">
+			 		<div class="content">
+			 			<div class="icon">
+			 				<i class="fas fa-toilet-paper"></i>
+
+			 			</div>
+			 				<h2>OIL CHANGES</h2>
+			 				<p> All brands including multinational and national which include tesla and corolla and all the famous brands</p>
+			 		</div>
+			 	</div>
+			 	<div class="col-sm-6 col-md-4 col-lg-3">
+			 		<div class="content">
+			 			<div class="icon">
+			 				<i class="fas fa-fan"></i>
+
+			 			</div>
+			 				<h2>AIR CONDITIONING</h2>
+			 				<p> All brands including multinational and national which include tesla and corolla and all the famous brands</p>
+			 		</div>
+			 	</div>
+			 	<div class="col-sm-6 col-md-4 col-lg-3">
+			 		<div class="content">
+			 			<div class="icon">
+			 				<i class="fas fa-charging-station"></i>
+
+			 			</div>
+			 				<h2>AUTO ELECTRIC</h2>
+			 				<p> All brands including multinational and national which include tesla and corolla and all the famous brands</p>
+			 		</div>
+			 	</div>
+			 	<div class="col-sm-6 col-md-4 col-lg-3">
+			 		<div class="content">
+			 			<div class="icon">
+			 				<i class="fas fa-toolbox"></i>
+
+			 			</div>
+			 				<h2>AUTO TRANSMISSION</h2>
+			 				<p> All brands including multinational and national which include tesla and corolla and all the famous brands</p>
+			 		</div>
+			 	</div>
+			 </div>
+		</div>
+	</section>
+
+	<!-- OUR BLOG -->
+
+	<section class="blog">
+		<div class="container-fluid">
+			<div class="blog-content">
+				<div class="blog-material">
+					<h2 id="x">OUR BLOG</h2>
+					<h6 id="x">Lorem ipsum dolor sit amet, consector edipcing elit.</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- blog post -->
+	
+	<section class="blog-post">
+		<div class="card">
+			<div class="img card1">
+							
+			</div>
+			<h5>Find Your Dreem Car</h5>
+			<p>Lorem ipsum is simply dummy test of the gritting and typesetting indusity lorem ipsum has been the industry
+			lorem ipsum has been the industry</p>
+			<h5><a href="#">Read more...</a></h5>
+		</div>
+		<div class="card">
+			<div class="img card2">
+							
+			</div>
+			<h5>Buying a best Sports Car</h5>
+			<p>Lorem ipsum is simply dummy test of the gritting and typesetting indusity lorem ipsum has been the industry
+			lorem ipsum has been the industry</p>
+			<h5><a href="#">Read more...</a></h5>
+		</div>
+		<div class="card">
+			<div class="img card3">
+							
+			</div>
+			<h5>Buying a best Sports Car</h5>
+			<p>Lorem ipsum is simply dummy test of the gritting and typesetting indusity lorem ipsum has been the industry
+			lorem ipsum has been the industry</p>
+			<h5><a href="#">Read more...</a></h5>
+		</div>
+
+		
+	</section>
+
+	<!-- achievements -->
+	<section class="ach">
+		<div class="ach2">
+			<div class="container-fluid">
+				<div class="row">
+					<div class=" col-7 col-sm-6 col-md-6  col-lg-6 col-xl-4" >
+						<div class="det det1">
+							<i class="far fa-id-card"></i>
+							<h2>10,000+</h2>
+							<h5>HAPPY COUSTOMERS</h5>
+						</div>
+					</div>
+					<div class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-4" >
+						<div class="det det2">
+							<i class="fas fa-truck"></i>
+							<h2>2,900+</h2>
+							<h5>VEHICLES WE HAVE DONE</h5>
+						</div>
+					</div>
+					<div class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-4" >
+						<div class="det det2">
+							<i class="fas fa-cog"></i>	
+							<h2>5,280</h2>
+							<h5>VEHICLES SERVICE DONE</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<!-- brands -->
+
+	<section class="brands">
+		<div class="container-fluid">
+			<div class="brands-content">
+				<div class="brands-material">
+					<h2>Our Brands</h2>
+					<div class="border-text">
+						<h6 id="h5">THE AUTOS WE DEALS IN
+							
+						</h6>
+						<span class="border-line"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- company -->
+
+	<section class="comp">
+		<div class="container-fluid">
+			<div class="comp-content">
+				<div class="owl-carousel try1 owl-theme">
+				    <div class="item item1"><img src="https://i2.wp.com/thinkmarketingmagazine.com/wp-content/uploads/2012/08/bmw-logo.png?ssl=1"></div>
+				    <div class="item item2"><img src="img/2.png"></div>
+				    <div class="item item3"><img src="img/3.png"></div>
+				    <div class="item item4"><img src="img/4.png"></div>
+				    <div class="item item5"><img src="img/5.png"></div>
+				    <div class="item item6"><img src="img/6.png"></div>
+				    
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+
+	<footer class="foot">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set">
+						<h2>Autocar</h2>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set set2">
+						<h3>Contact Info</h3>
+						<ul>
+							<li><i class="fas fa-map-marker-alt"></i> 20F Green Road Swiz Canal near world</li>
+							<li><i class="fas fa-envelope"></i> info@gmail.com</li>
+							<li><i class="fas fa-phone-alt"></i> +92 564 66556256</li>
+							<li><i class="fas fa-fax"></i> +432 26 5466</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set set3">
+						<h3>Useful Links</h3>
+						<ul>
+							<li>> <a href="#">Home</a></li>
+							<li>> <a href="#">About Us</a></li>
+							<li>> <a href="#">Services</a></li>
+							<li>> <a href="#">Car Listing</a></li>
+							<li>> <a href="#">Blog</a></li>
+							<li>> <a href="#">Contact Us</a></li>
+							<li>> <a href="#">Elements</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="set">
+						<h3>Subscribe</h3>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						<div class="data">
+							<input type="text" placeholder="Email address..." name="">
+							<div class="push">
+								<i class="far fa-paper-plane"></i>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="foot2">
+						<p> 2019 Cars U. All Right reserved.</p>
+						<div class="end pull-right">
+							<div class="social">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div class="social tweet">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</div>
+							<div class="social google">
+								<a href=""><i class="fab fa-google"></i></a>
+							</div>
+							<div class="social linked">
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							</div>
+							<div class="social top">
+								<a href="#choose"><i class="fas fa-caret-up"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+<!-- bootstrap jquery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- bootstrap fonts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<!-- bootstrap javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+
+<!-- plug in owl-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+ <!-- initialize owl plug in -->
+   <script type="text/javascript">
+   	   $(document).ready(function(){
+     
+
+     $('.try1').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3,
+            margin:0
+        },
+        1000:{
+            items:6,
+            margin:20
+        }
+    }
+})
+});
+   </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.signup{
+  height: 100vh;
+
+}
+
+.left{
+  background-image: url('https://images.unsplash.com/photo-1617654245488-b3daa83c43da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yb2xsYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  height: 96vh;
+      background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+
+.left::before{
+      content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: block;
+    opacity: 0.7;
+    border-radius: 10px;
+    /*padding: 10px;*/
+}
+
+.left h1{
+  top: 20%;
+  left: 40%;
+  color: white;
+  position: absolute;
+  transform: translate(-40%,-20%);
+}
+
+.right{
+  /*border: 2px solid black;*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.right .center{
+  width: 70%;
+  height: 90%;
+  /*border: 2px solid yellow;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center .ball{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  opacity: 0.7;
+  border-radius: 50%;
+  position: relative;
+  position: relative;
+  overflow: hidden;
+  /*border: 1px solid transparent;*/
+}
+
+
+.ball i{
+  top: 20%;
+  left: -10%;
+  position: absolute;
+  transform: translateX(-20%);
+  font-size: 30px;
+  color: white;
+}
+
+form{
+  width: 86%;
+}
+
+form input[type="submit"]{
+  background-color: red;
+  opacity: 0.8;
+  color: white;
+}
+
+/*.cstm{
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  line-height: 1.5;
+  height: 32px;
+  width: 86%;
+      width: 283px;
+
+}*/
+
+.btn{
+  width: 86%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+   background-color: white; !important;
+   opacity: 0.8;
+   border: 1px solid #ced4da;
+
+   color: grey;
+}
+
+.btn p{
+  display: block;
+
+}
+
+.cstm{
+  border: none;
+}
+
+.btn:hover{
+  background-color: transparent;
+  color: inherit;
+}
+
+@media(max-width: 992px){
+  .left{
+    display: none;
+  }
+
+  .right{
+    height: 99vh;
+  }
+
+}
+
+@media(max-width: 786px){
+  .right{
+    height: 99vh;
+  }
+  .right .center{
+    width: 100%;
+  }
+}

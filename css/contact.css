@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+
+
+
+/* navbar */
+
+.bg-company-red {
+    background-color: #151728 !important;
+}
+
+.navbar-custom{
+  background-color: #151728;
+}
+
+.sell {
+  background-color: #EC2126;
+ padding: 6px 0px 6px 0px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 158px;
+  /*margin-top: -10px;*/
+  color: white;
+
+}
+
+.sell h6{
+  margin-bottom: 0.3rem;
+}
+.navbar-nav a{
+  text-decoration: none;
+
+}
+
+.sell:hover,.sell:hover h5 , .sell:hover i{
+  background-color: white;
+  color: red;
+  transition: 0.3s ease-in;
+}
+
+
+
+.sell i{
+  font-size: 21px;
+}
+
+ul i{
+  color: white;
+}
+
+.csk{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+
+/* room */
+
+.room{
+  height: 150px;
+  /*border: 2px solid red;*/
+  background-image: url('http://autoshowroom.co/wp-content/uploads/2019/12/breadcrumb.jpg');
+  background-position: center top;
+  background-size:cover ;
+}
+
+.room .text{
+      background-color: rgba(0, 0, 0, 0.6);
+      height:150px ;
+      display: flex;
+      align-items:center;
+}
+
+.room .text h2{
+  color: white;
+  padding-left: 10%;
+  position: relative;
+}
+
+.room .text h2::before{
+  position: absolute;
+  content: '';
+  border-bottom: 1px solid red;
+  width: 30px;
+  top: 50%;
+  right: -80px;
+}
+
+.room .text h2::after{
+  position: absolute;
+  content: '';
+  border-bottom: 1px solid red;
+  width: 50px;
+  top: 70%;
+  right: -80px;
+}
+
+.middle{
+  background-color: #F7F9FB;
+  height: auto;
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+.middle .map{
+  height: auto;
+}
+
+
+/* map */
+
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+/* form */
+
+.middle .form{
+  background-color: white;
+  height: auto;
+  width: 70%;
+}
+
+.middle .form .vehicle{
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.middle .form .vehicle i{
+  color: red;
+  font-size: 25px;
+}
+
+.middle .form input[type="submit"]{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* details */
+
+.middle .details{
+  height: auto;
+  background-color: white;
+  /*margin-top: 20px;*/
+}
+
+
+.middle .details .left{
+  height: auto;
+
+} 
+.middle .details .left .logo{
+  height: 200px;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -85px;
+  -webkit-box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%)
+}
+
+.middle .details .left .logo img{
+  width: 200px;
+  height: 125px;
+  max-width: 100%;
+}
+
+.middle .details .left .address {
+  height: auto;
+  background-color: #F4F5F8;
+  padding: 20px;
+  -webkit-box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%)
+}
+
+.middle .details .left .address .agency-info{
+  font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    /*justify-content: space-around;*/
+    /*width: 80%;*/
+    /*align-items: center;*/
+}
+
+.middle .details .left .address .agency-info i{
+  padding-right: 20px;
+  padding-top: 7px;
+}
+
+.middle .details .left .address .agency-info  h6{
+  font-size: 0.8rem;
+}
+
+#boom{
+  padding-left:15%;
+}
+
+.star{
+  padding-left: 15%;
+}
+.star i{
+  color: orange;
+  padding-right: 4px !important;
+}
+
+.middle .details  .right {
+  /*height: 800px;*/
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  /*font-size: 12px;*/
+    line-height: 25px;
+
+} 
+
+.middle .details  .right textarea{
+      color: #565656;
+    border: 1px solid #dfdfdf;
+    font-family: 'Muli',sans-serif;
+    padding: 10px;
+    height: 190px;
+    width: 100%;
+}
+
+.middle .details  .right input[type="submit"]{
+  background-color: red;
+  color: white;
+}
+.middle .details  .right h2{
+  margin-top: 20px;
+  padding-left: 20px;
+  border-left: 4px solid red;
+  margin-bottom: 30px;
+}
+.middle .details  .right  p{
+    line-height: 25px;
+    padding-bottom: 23px;
+    margin-bottom: 50px;
+}
+
+
+/* contact us */
+
+.contact{
+  /*background-image: url('http://autoshowroom.co/wp-content/uploads/2019/12/contactbg.jpg');*/
+      background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+/*.contact::before{
+  background-color: #080E1E;
+    opacity: 0.7;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}*/
+
+.contact .details{
+      background-color: rgba(8, 14, 30,0.9);
+      /*background-color: #080E1E;*/
+       /*opacity: 0.7;*/
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+.contact .details h2{
+  color: white;
+}
+
+
+.contact .details button{
+  background-color: red !important;
+}
+
+/*footer*/
+
+.foot{
+  height: auto;
+  background-image: url('https://images.unsplash.com/photo-1471479917193-f00955256257?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1448&q=80');
+  background-position:center;
+  background-size: cover;
+   
+   position: relative;
+
+}
+
+.foot::before{
+  background-color: #080E1E;
+  opacity: 0.7;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.foot .set{
+  margin-top: 40px;
+  height: fit-content;
+  background-color: transparent;
+  margin-bottom: 65px;
+  /*opacity: 0.2;*/
+}
+
+.foot .row {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.foot .set p{
+  color: white;
+  opacity: 0.7;
+}
+
+.foot .set h2{
+  font-weight: bold;
+  color: white;
+}
+
+.foot .set ul{
+  list-style: none;
+  color: white;
+  opacity: 0.7;
+}
+
+.foot .set ul li{
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.foot .set h3{
+  color: white;
+  opacity: 0.7;
+  padding-top: 5px;
+}
+
+.foot .set3 ul li{
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.foot .set3 ul li a{
+  color: white;
+  opacity: 0.7;
+  padding-left: 20px;
+}
+
+.data{
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+}
+
+.data input{
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+}
+
+.data .push{
+  width: 20%;
+  height: 100%;
+  background-color:red;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.data .push i{
+  padding-top: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.foot2{
+  height: 48px;
+  /*background-color:white;*/
+  /*width: 100%;*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.foot2 .end{
+  display: flex;
+  justify-content: space-between;
+  width: 282px;
+  /*background-color:yellow;*/
+  height: 100%;
+  /*margin-top: -30px;*/
+  /*order: 1;*/
+}
+
+.foot2 .end  .top{
+  width: 30px ;
+  height: 30px;
+  background-color: white;
+  display: inline-block;
+  /*margin-left: 60px;*/
+  /*margin-top: 5px;*/
+  position: relative;
+
+}
+
+.foot2 .end  .top a{
+  color: white;
+}
+
+.foot2 .end .social{
+      width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+    border: 1px solid white;
+    margin-left: 5px;
+    padding: 3px;
+    padding-left: 8px;
+}
+
+.foot2 .end .tweet{
+  padding-left: 7px;
+}
+
+.foot2 .end .google,.linked{
+  padding-left: 6px;
+}
+
+.foot2 .end .top{
+  margin-left: 40px;
+  border-radius: 0;
+  background-color: red;
+  padding-left: 9px;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.foot2 p{
+  color: white;
+  opacity: 0.7;
+  /*order: 2;*/
+  /*margin-top: 40px;*/
+  text-align: center;
+}
+
+
+
+@media(max-width: 768px){
+  .header .ask input{
+  width: 100%;
+  
+}
+
+.form-details .center{
+  width: 100%;
+}
+
+.carlist .item1{
+  width: 100%;
+}
+
+.paginatio{
+  /*margin-top: 2050px;*/
+}
+
+.search-in{
+  padding-left: 30px;
+}
+  
+  /*navbar*/
+
+  .foot2 p{
+  order: 2;
+}
+
+.foot2 .end{
+  order: 1;
+}
+
+  .foot2 .end{
+        margin-top: -48px;
+  }
+}
+
+
+@media(max-width: 345px){
+    .room .text h2::before{
+    display: none;
+  }
+  .room .text h2::after{
+    display: none;
+  }
+}
+
+@media(max-width: 768px){
+  .form{
+    width: 100% !important;
+  }
+
+  .foot2 p{
+  order: 2;
+}
+
+.foot2 .end{
+  order: 1;
+}
+
+  .foot2 .end{
+        margin-top: -48px;
+  }
+
+  .room .text h2{
+    padding-left: 1%;
+  }
+  .room .text h2::before{
+    right: -37px;
+  }
+  .room .text h2::after{
+    right: -56px;
+  }
+}
+
+@media(max-width: 992px){
+  .form{
+    width: 100% !important;
+  }
+}
